@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
                     </div>
 
                     {/* Mobile menu */}
-                    <div className=" flex gap-4 items-center md:hidden">
+                    <div className="flex gap-4 items-center md:hidden">
                         <Switch
                             checked={theme === 'dark'}
                             onCheckedChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}

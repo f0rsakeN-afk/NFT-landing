@@ -1,4 +1,4 @@
-import { Globe, MoveRight } from 'lucide-react'
+import { Globe, ChevronRight } from 'lucide-react'
 import Marquee from 'react-fast-marquee'
 import { useTheme } from '@/context/ThemeProvider'
 import { cn } from '@/lib/utils'
@@ -58,7 +58,7 @@ const Hero = () => {
                             className="group text-base px-8 py-6"
                         >
                             Discover More
-                            <MoveRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                            <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </div>
                 </div>
