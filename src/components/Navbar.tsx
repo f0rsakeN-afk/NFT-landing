@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo from './Logo'
-import { FacebookIcon, Instagram, TwitterIcon, Wallet, Moon, Sun, Menu } from 'lucide-react'
+import { Wallet, Moon, Sun, Menu } from 'lucide-react'
 import { Button } from './ui/button'
 import { useTheme } from '@/context/ThemeProvider'
 import { Switch } from './ui/switch'
 import { cn } from '@/lib/utils'
-import { Sheet, SheetContent, SheetFooter, SheetTrigger } from './ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 
 type NavbarData = {
     name: string
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <div className="hidden md:flex items-center gap-6">
-                        <SocialIcons />
+                        {/* <SocialIcons /> */}
                         <div className="flex items-center space-x-2">
                             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0" />
                             <Switch
@@ -87,9 +87,7 @@ const Navbar: React.FC = () => {
                                         </h2>
                                     ))}
                                 </div>
-                                <SheetFooter>cnsdvd
-                                    <SocialIcons />
-                                </SheetFooter>
+                                {/*  <AccountConnect /> */}
                             </SheetContent>
                         </Sheet>
                     </div>
@@ -99,7 +97,7 @@ const Navbar: React.FC = () => {
     )
 }
 
-const SocialIcons: React.FC = () => {
+/* const SocialIcons: React.FC = () => {
     return (
         <div className="flex items-center gap-4">
             {[FacebookIcon, TwitterIcon, Instagram].map((Icon, index) => (
@@ -115,7 +113,7 @@ const SocialIcons: React.FC = () => {
             ))}
         </div>
     )
-}
+} */
 
 const AccountConnect: React.FC = () => {
     return (
