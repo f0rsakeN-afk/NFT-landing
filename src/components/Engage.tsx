@@ -20,7 +20,7 @@ const data: EngageDataTypes[] = [{
 const Engage: React.FC = () => {
     return (
         <div className="container mx-auto px-4 lg:px-0 py-8 max-w-6xl">
-            <h1 className="text-primary text-7xl max-w-[650px] tracking-wider">Engage your
+            <h1 className="text-primary text-6xl md:text-7xl max-w-[650px] tracking-wider">Engage your
                 Fans with community</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8 pt-6">
                 {data.map(el => (
