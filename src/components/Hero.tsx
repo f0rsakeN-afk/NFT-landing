@@ -11,7 +11,7 @@ const Hero = () => {
     const { theme } = useTheme();
     return (
         <div className='container mx-auto max-w-6xl pt-32 lg:pt-44 px-4 lg:px-0 pb-16'>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center justify-center">
                 {/* Left Content */}
                 <div className="col-span-2 space-y-4 lg:space-y-8 px-4 md:px-0">
                     <div className=" space-y-2 lg:space-y-4">
@@ -64,20 +64,20 @@ const Hero = () => {
                 </div>
 
                 {/* Right Content - Hero Image */}
-                <div className="relative col-span-1 order-first lg:order-last">
+                <div className="relative col-span-1 order-first lg:order-last flex justify-center items-center">
                     <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-muted/20 rounded-full blur-3xl -z-10" />
                     <div className="relative group">
-                        <div className="absolute -inset-2   bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-700 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                         <Card className="p-0 overflow-hidden">
                             <img
                                 src={HeroImage}
-                                alt='hero image'
+                                alt="hero image"
                                 className="w-full h-[400px] sm:h-[450px] md:h-[600px] lg:h-[500px] object-cover transform transition duration-500 group-hover:scale-[1.02]"
                             />
                         </Card>
 
                         {/* Floating Bid Card */}
-                        <Card className="absolute -bottom-4 -left-4 bg-background/95 backdrop-blur-sm p-4 w-auto sm:w-auto">
+                        <Card className=" absolute -bottom-4 -left-4 bg-background/95 backdrop-blur-sm p-4 w-auto sm:w-auto">
                             <div className="flex items-center gap-3">
                                 <div className="h-8 w-8 sm:h-12 sm:w-12 rounded-full bg-gradient-to-r from-primary via-amber-400 to-purple-600" />
                                 <div>
