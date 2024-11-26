@@ -1,50 +1,126 @@
-# React + TypeScript + Vite
+# NFT Music Marketplace Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for an NFT music marketplace built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Project Screenshot](./src/assets/1.png) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎨 Modern and clean UI design
+- 🌓 Dark/Light mode support
+- 📱 Fully responsive layout
+- ⚡ Fast and optimized performance
+- 🎵 Music NFT showcase
+- 💳 Wallet integration ready
+- 🎨 Customizable components
+- 🔧 Built with modern tools and frameworks
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://reactjs.org/) - UI Library
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [Vite](https://vitejs.dev/) - Build Tool
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [Radix UI](https://www.radix-ui.com/) - Headless UI Components
+- [Lucide React](https://lucide.dev/) - Icon Library
+- [React Fast Marquee](https://www.react-fast-marquee.com/) - Marquee Component
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/f0rsakeN-afk/NFT-landing
+```
+
+2. Navigate to the project directory
+```bash
+cd NFT-landing
+```
+
+3. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+5. Build for production
+```bash
+npm run build
+# or
+yarn build
+```
+
+
+## 🎨 Components
+
+- `Navbar` - Main navigation component with theme switcher
+- `Hero` - Landing page hero section
+- `MarketPlace` - NFT marketplace showcase
+- `HowItWorks` - Information section about NFT functionality
+- `Discover` - NFT discovery section
+- `Engage` - Community engagement section
+- `Footer` - Page footer with navigation and social links
+
+## 🔧 Configuration
+
+### Theme Configuration
+
+The project uses a theme provider that supports light and dark modes. Theme preferences are stored in local storage.
+
+```typescript
+// Customize theme in src/context/ThemeProvider.tsx
+const ThemeProvider = ({
+    children,
+    defaultTheme = "system",
+    storageKey = "vite-ui-theme",
+    ...props
 })
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Tailwind Configuration
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Customize the theme, colors, and other styles in `tailwind.config.js`.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📱 Responsive Design
+
+The landing page is fully responsive with breakpoints for:
+- Mobile devices
+- Tablets
+- Desktop screens
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 👨‍💻 Author
+
+[Naresh Rajbanshi](https://github.com/f0rsakeN-afk)
+
+## 🙏 Acknowledgments
+
+- Design inspiration from various NFT marketplaces
+- Icons from Lucide React
+- UI components from Radix UI
+
+---
