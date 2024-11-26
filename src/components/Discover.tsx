@@ -128,7 +128,7 @@ const Discover: React.FC = () => {
                     <div key={el.name} className='relative p-4 md:p-0'>
                         <CardContent >
                             <img src={re} alt="rectange border" className={cn('absolute h-[350px] left-3 top-24 md:h-[350px] md:top-20 md:-left-1 lg:left-0 lg:top-12 lg:h-[350px] w-full ', theme === 'light' ? 'invert' : 'invert-0')} />
-                            <img src={el.image} alt="image" className='' />
+                            <img src={el.image} alt="image" className='transform duration-500 hover:scale-110 cursor-pointer transition' />
                             <div className="pt-5 flex flex-col space-y-2">
                                 <h2 className="text-2xl font-semibold">{el.name}</h2>
                                 <section className="flex items-center justify-between">
