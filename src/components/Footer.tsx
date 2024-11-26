@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button';
 import { MoveUp } from 'lucide-react';
 import { Separator } from './ui/separator';
+import { scrollToTop } from '@/utils';
 
 const Footer: React.FC = () => {
     return (
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center space-y-4">
-                    <Button className='hidden md:flex items-center gap-1 '>
+                    <Button onClick={() => scrollToTop()} className='hidden md:flex items-center gap-1 '>
                         <MoveUp /> Back to the top
                     </Button>
                     <p className="text-muted-foreground text-sm">Copyright &copy;2025 Naresh Rajbanshi </p>
